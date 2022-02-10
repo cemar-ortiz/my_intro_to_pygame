@@ -18,3 +18,5 @@ In a game, the framerate can fluctuate. This may affect the game's experience an
 
 Any kind of image has a surface. The display is a surface. Other objects that are drawn on this surface we need a (regular) surface.
 
+Whenever we draw surfaces and specify drawing positions, units are in pixels
+
