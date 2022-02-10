@@ -14,3 +14,7 @@ It is also good as a learning tool to train yourself with how to build systems w
 
 In a game, the framerate can fluctuate. This may affect the game's experience and thus we need to control how fast we want to update the game.
 
+#
+
+Any kind of image has a surface. The display is a surface. Other objects that are drawn on this surface we need a (regular) surface.
+
