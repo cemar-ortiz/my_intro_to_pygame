@@ -12,7 +12,8 @@ screen = pygame.display.set_mode((800, 400))
 pygame.display.set_caption("My window")
 clock = pygame.time.Clock()
 
-test_surface = pygame.image.load('graphics/Sky.png')
+sky_surface = pygame.image.load('graphics/Sky.png')
+ground_surface = pygame.image.load('graphics/ground.png')
 
 
 while(True):
@@ -22,7 +23,8 @@ while(True):
             exit()
 
     # block image transfer
-    screen.blit(test_surface, (200,100))
+    screen.blit(sky_surface, (0, 0))
+    screen.blit(ground_surface, (0, 350))
 
     pygame.display.update()
     # set framerate
