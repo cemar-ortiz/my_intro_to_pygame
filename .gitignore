@@ -1,2 +1,7 @@
 # Virtual environment
 venv/
+
+# Assets
+audio/
+font/
+graphics/
