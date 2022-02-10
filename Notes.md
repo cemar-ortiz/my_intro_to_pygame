@@ -20,3 +20,6 @@ Any kind of image has a surface. The display is a surface. Other objects that ar
 
 Whenever we draw surfaces and specify drawing positions, units are in pixels
 
+# Links for resources
+
+graphics: https://opengameart.org/content/platformer-art-pixel-edition 

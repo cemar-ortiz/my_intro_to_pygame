@@ -13,7 +13,7 @@ pygame.display.set_caption("My window")
 clock = pygame.time.Clock()
 
 sky_surface = pygame.image.load('graphics/Sky.png')
-ground_surface = pygame.image.load('graphics/ground.png')
+ground_surface = pygame.image.load('graphics/Ground.png')
 
 
 while(True):
