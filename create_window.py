@@ -18,12 +18,9 @@ clock = pygame.time.Clock()
 while(True):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            # quits the pygame engine
             pygame.quit()
-            # exits the entire module at this point in the code, preventing a pygame error
             exit()
-    # draw all our elements
-    # update everything
+
     pygame.display.update()
-    # This tells the loop the max frame rate, 60 fps.
+    # set framerate
     clock.tick(60)
