@@ -11,11 +11,11 @@ pygame.init()
 screen = pygame.display.set_mode((800, 400))
 pygame.display.set_caption("My window")
 clock = pygame.time.Clock()
-test_font = pygame.font.Font(None, 50)
+test_font = pygame.font.Font('font/Pixeltype.ttf', 50)
 
 sky_surface = pygame.image.load('graphics/Sky.png')
 ground_surface = pygame.image.load('graphics/Ground.png')
-text_surface = test_font.render('My game', False, 'Green')
+text_surface = test_font.render('Dirtbound', False, 'Black')
 
 
 while(True):
