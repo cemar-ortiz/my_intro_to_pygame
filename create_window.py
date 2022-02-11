@@ -1,5 +1,6 @@
 '''
-Learning how to create a window with pygame and draw surfaces on top of it. Also how to set a framerate
+Learning how to create a window with pygame and draw surfaces on top of it. Also how to set a framerate.
+Learning how to run basic animations
 '''
 
 import pygame
