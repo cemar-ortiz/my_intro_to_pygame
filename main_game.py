@@ -36,12 +36,12 @@ while(True):
     screen.blit(ground_surface, (0, 350))
     screen.blit(text_surface, (300, 50))
 
-    snail_rectangle.right -= 1.5
+    snail_rectangle.x -= 1.5
     screen.blit(snail_surface, snail_rectangle)
     if snail_rectangle.right == 0:
         snail_rectangle.left = 800
     
-    player_rectangle.left += 1
+    player_rectangle.x += 1
     screen.blit(player_surface, player_rectangle)
     if player_rectangle.left == 800:
         player_rectangle.right = 0
