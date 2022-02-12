@@ -20,6 +20,12 @@ Any kind of image has a surface. The display is a surface. Other objects that ar
 
 Whenever we draw surfaces and specify drawing positions, units are in pixels
 
+#
+
+Rectangles allows us to have control over which 'point' and 'side' we'll be using to place surfaces on our screen surface. Surfaces can be "blitted" onto a position in the screen by using for reference its topleft vertix, by using rectangles we get access to topleft, midtop, topright and so on... to use as references to place surfaces. This gives us more flexibility when placing surfaces onto the screen
+
+
+
 # Links for resources
 
 graphics: https://opengameart.org/content/platformer-art-pixel-edition 
