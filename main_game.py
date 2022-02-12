@@ -19,7 +19,7 @@ ground_surface = pygame.image.load('graphics/Ground.png').convert()
 text_surface = test_font.render('Dirtbound', False, 'Black')
 
 snail_surface = pygame.image.load('graphics/snail/snail1.png').convert_alpha()
-snail_x_pos = 600
+snail_rectangle = snail_surface.get_rect(bottomright = (800, 350))
 
 player_surface = pygame.image.load('graphics/player/player_walk_1.png').convert_alpha()
 player_rectangle = player_surface.get_rect(midbottom=(80,350))
@@ -35,12 +35,16 @@ while(True):
     screen.blit(sky_surface, (0, 0))
     screen.blit(ground_surface, (0, 350))
     screen.blit(text_surface, (300, 50))
-    snail_x_pos -= 1.5
-    screen.blit(snail_surface, (snail_x_pos, 315))
-    if snail_x_pos <= -45:
-        snail_x_pos = 805
+
+    snail_rectangle.right -= 1.5
+    screen.blit(snail_surface, snail_rectangle)
+    if snail_rectangle.right == 0:
+        snail_rectangle.left = 800
+    
     player_rectangle.left += 1
     screen.blit(player_surface, player_rectangle)
+    if player_rectangle.left == 800:
+        player_rectangle.right = 0
 
     pygame.display.update()
     # set framerate
