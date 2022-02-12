@@ -39,6 +39,7 @@ while(True):
     screen.blit(snail_surface, (snail_x_pos, 315))
     if snail_x_pos <= -45:
         snail_x_pos = 805
+    player_rectangle.left += 1
     screen.blit(player_surface, player_rectangle)
 
     pygame.display.update()
