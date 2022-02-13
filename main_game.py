@@ -30,10 +30,10 @@ while(True):
         if event.type == pygame.QUIT:
             pygame.quit()
             exit()
-        if event.type == pygame.MOUSEMOTION:
-            mouse_pos = event.pos
-            if player_rectangle.collidepoint(mouse_pos):
-                print('collision with mouse')
+        # if event.type == pygame.MOUSEMOTION:
+        #     mouse_pos = event.pos
+        #     if player_rectangle.collidepoint(mouse_pos):
+        #         print('collision with mouse')
 
     # block image transfer
     screen.blit(sky_surface, (0, 0))
