@@ -31,11 +31,16 @@ while(True):
             pygame.quit()
             exit()
         if event.type == pygame.MOUSEMOTION:
-            print(event.pos)
+            mouse_pos = event.pos
+            if player_rectangle.collidepoint(mouse_pos):
+                print('collision with mouse')
+                
         if event.type == pygame.MOUSEBUTTONDOWN:
-            print('mouse down')
+            # print('mouse down')
+            pass
         if event.type == pygame.MOUSEBUTTONUP:
-            print('mouse up')
+            # print('mouse up')
+            pass
 
     # block image transfer
     screen.blit(sky_surface, (0, 0))
@@ -55,9 +60,9 @@ while(True):
     # if player_rectangle.colliderect(snail_rectangle):
     #     print('collision')
 
-    mouse_pos = pygame.mouse.get_pos()
-    if player_rectangle.collidepoint(mouse_pos):
-        print(pygame.mouse.get_pressed())
+    # mouse_pos = pygame.mouse.get_pos()
+    # if player_rectangle.collidepoint(mouse_pos):
+    #     print(pygame.mouse.get_pressed())
          
 
     pygame.display.update()
