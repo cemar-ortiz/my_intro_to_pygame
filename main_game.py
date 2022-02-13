@@ -46,6 +46,9 @@ while(True):
     if player_rectangle.left == 800:
         player_rectangle.right = 0
 
+    if player_rectangle.colliderect(snail_rectangle):
+        print('collision')
+
     pygame.display.update()
     # set framerate
     clock.tick(60)
