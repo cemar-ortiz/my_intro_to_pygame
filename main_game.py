@@ -51,7 +51,7 @@ while(True):
 
     mouse_pos = pygame.mouse.get_pos()
     if player_rectangle.collidepoint(mouse_pos):
-        print('mouse collision')
+        print(pygame.mouse.get_pressed())
          
 
     pygame.display.update()
