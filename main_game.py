@@ -34,13 +34,6 @@ while(True):
             mouse_pos = event.pos
             if player_rectangle.collidepoint(mouse_pos):
                 print('collision with mouse')
-                
-        if event.type == pygame.MOUSEBUTTONDOWN:
-            # print('mouse down')
-            pass
-        if event.type == pygame.MOUSEBUTTONUP:
-            # print('mouse up')
-            pass
 
     # block image transfer
     screen.blit(sky_surface, (0, 0))
