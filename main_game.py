@@ -32,6 +32,10 @@ while(True):
             exit()
         if event.type == pygame.MOUSEMOTION:
             print(event.pos)
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            print('mouse down')
+        if event.type == pygame.MOUSEBUTTONUP:
+            print('mouse up')
 
     # block image transfer
     screen.blit(sky_surface, (0, 0))
