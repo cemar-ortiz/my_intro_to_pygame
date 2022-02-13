@@ -46,8 +46,13 @@ while(True):
     if player_rectangle.left == 800:
         player_rectangle.right = 0
 
-    if player_rectangle.colliderect(snail_rectangle):
-        print('collision')
+    # if player_rectangle.colliderect(snail_rectangle):
+    #     print('collision')
+
+    mouse_pos = pygame.mouse.get_pos()
+    if player_rectangle.collidepoint(mouse_pos):
+        print('mouse collision')
+         
 
     pygame.display.update()
     # set framerate
